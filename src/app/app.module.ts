@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from './app.component';
-import {ProfileModule} from "./profile/profile.module";
+import {ProfileModule} from './profile/profile.module';
 
 const routes: Routes = [
     {
