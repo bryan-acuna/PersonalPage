@@ -4,17 +4,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from './app.component';
+import {ProfileComponent} from "./profile/profile.component";
 import {ProfileModule} from './profile/profile.module';
 
 const routes: Routes = [
-    {
-        path: 'profile', loadChildren: () =>
-            import('./profile/profile.module')
-                .then(m => m.ProfileModule)
-    },
-    {
-        path: '**', redirectTo: 'profile'
-    }
+    {path: '', component: ProfileComponent}
 ];
 
 
